@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Simply register</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="login-container">
+        <div class="title-label">
+            <img src="assets/logo.png" />
+        </div>
+        <div class="sign-in-container">
+            <h1 class="sign-in-label">
+                Sign in
+            </h1>
+            <!-- <h4 class="sign-in-sub-label">
+        Lorem ipsume zekfnae knknsqf kqnd
+      </h4> -->
+        </div>
+        <form #loginForm="ngForm">
+            <div>
+                <div>
+                    <ion-item>
+                        <ion-label color="primary" floating>Username</ion-label>
+                        <ion-input #username="ngModel" name="username" type="email" [(ngModel)]="user.username" required></ion-input>
+                    </ion-item>
+                    <div *ngIf="!(username.valid || username.pristine) || (isSubmittedWrong && !username.valid)" class="error-label">
+                        <div [hidden]="!username.errors.required">
+                            Username is required
+                        </div>
+                        <div [hidden]="!username.errors.email">
+                            Username is not valid
+                        </div>
+                    </div>
+                    <ion-item>
+                        <ion-label color="primary" floating>Email</ion-label>
+                        <ion-input #email="ngModel" name="email" type="email" [(ngModel)]="user.email" required></ion-input>
+                    </ion-item>
+                    <div *ngIf="!(email.valid || email.pristine) || (isSubmittedWrong && !email.valid)" class="error-label">
+                        <div [hidden]="!email.errors.required">
+                            Email is required
+                        </div>
+                        <div [hidden]="!email.errors.email">
+                            Email is not valid
+                        </div>
+                    </div>
+                    <ion-item>
+                        <ion-label color="primary" floating>Password</ion-label>
+                        <ion-input #password="ngModel" name="password" type="password" [(ngModel)]="user.password" required></ion-input>
+                    </ion-item>
+                    <div *ngIf="!(password.valid || password.pristine) || (isSubmittedWrong && !password.valid)" class="error-label">
+                        Password is required
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" (click)="onSignup(loginForm)" class="login-button" ion-button>Create Account</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ion-content>

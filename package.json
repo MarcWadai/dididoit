@@ -1,0 +1,104 @@
+{
+  "name": "didi",
+  "version": "1.0.0",
+  "author": "msirisak",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "test-coverage": "ng test --code-coverage",
+    "test": "ng test"
+  },
+  "config": {
+    "ionic_webpack": "./config/webpack.config.js",
+    "ionic_source_map": "source_map"
+  },
+  "dependencies": {
+    "@angular/animations": "4.1.3",
+    "@angular/common": "4.1.3",
+    "@angular/compiler": "4.1.3",
+    "@angular/compiler-cli": "4.1.3",
+    "@angular/core": "4.1.3",
+    "@angular/forms": "4.1.3",
+    "@angular/http": "4.1.3",
+    "@angular/platform-browser": "4.1.3",
+    "@angular/platform-browser-dynamic": "4.1.3",
+    "@ionic-native/core": "3.7.0",
+    "@ionic-native/keyboard": "^3.11.0",
+    "@ionic-native/sqlite": "^3.10.3",
+    "@ionic-native/status-bar": "3.7.0",
+    "@ionic/app-scripts": "2.0.2",
+    "@ionic/storage": "^2.0.1",
+    "@ngx-translate/core": "^7.0.0",
+    "@ngx-translate/http-loader": "^0.1.0",
+    "angularfire2": "^4.0.0-rc.1",
+    "cordova-android": "^6.2.3",
+    "cordova-ios": "^4.4.0",
+    "cordova-plugin-console": "1.0.5",
+    "cordova-plugin-device": "1.1.4",
+    "cordova-plugin-statusbar": "2.2.2",
+    "cordova-plugin-whitelist": "1.3.1",
+    "cordova-sqlite-storage": "^2.0.4",
+    "firebase": "^4.2.0",
+    "ionic-angular": "^3.6.0",
+    "ionic-plugin-keyboard": "~2.2.1",
+    "ionic-tags-input": "0.0.6",
+    "ionicons": "3.0.0",
+    "moment": "^2.18.1",
+    "rxjs": "5.4.0",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.12"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.0.4",
+    "@angular/router": "4.1.3",
+    "@ionic/app-scripts": "^2.1.4",
+    "@ionic/cli-plugin-cordova": "1.4.1",
+    "@ionic/cli-plugin-ionic-angular": "1.3.2",
+    "@types/jasmine": "^2.5.47",
+    "@types/node": "^7.0.21",
+    "ionic": "3.6.0",
+    "jasmine-core": "^2.6.2",
+    "jasmine-spec-reporter": "^4.1.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "typescript": "2.3.4"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ],
+  "description": "superpms: for superbooking",
+  "cordova": {
+    "plugins": {
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "titles": {
+    "bookings": "Réservations",
+    "add_booking": "Ajouter réservation",
+    "edit_booking": "Modifier réservation",
+    "infos": "Informations",
+    "messages": "Messages",
+    "payment": "Payement",
+    "calendar": "Calendrier",
+    "agenda": "Agenda"
+  },
+  "sideMenu": {
+    "bookings": "Réservations",
+    "logout": "Déconnexion",
+    "calendar": "Calendrier",
+    "agenda": "Agenda"
+  },
+  "menu": {
+    "call_guest": "Appeller le locataire",
+    "send_sms": "Envoyer un SMS",
+    "send_mail": "Envoyer un Email",
+    "send_invoice": "Envoyer une facture",
+    "send_contract": "Envoyer un contrat",
+    "add_payment": "Ajouter un payement"
+  },
+  "filter": {
+
+  },
+  "labels_title": {
+    "guest": "DETAIL LOCATAIRE",
+    "booking": "DETAIL DE LA LOCATION",
+    "payment": "DETAIL DU PAYEMENT"
+  },
+  "labels": {
+    "first_name": "PRENOM",
+    "last_name": "NOM",
+    "name": "NOM",
+    "email": "EMAIL",
+    "phone": "TELEPHONE",
+    "country": "PAYS",
+    "guests": "INVITES",
+    "nights": "NUITS",
+    "checkin": "CHECKIN",
+    "checkout": "CHECKOUT",
+    "platform": "PLATFORM",
+    "rental": "NOM APPARTEMENT",
+    "timein": "HEURE ARRIVE",
+    "timeout": "HEURE DEPART",
+    "nb_adults": "Nb d'ADULTES",
+    "nb_children": "Nb d'ENFANTS",
+    "price": "PRIX TTC",
+    "deposit": "DEPOSIT",
+    "base_charge": "PRIX SANS FRAIS",
+    "price_extra": "FRAIS ADDITIONEL",
+    "cleaning_fee": "FRAIS DE MENAGE",
+    "chat_hint": "Ecrivez votre message",
+    "payment": {
+      "cleaning": "Ménage",
+      "nights": "Nuits",
+      "taxes": "Taxes",
+      "balance": "Balance",
+      "invoice_total": "Total du contrat",
+      "paid": "Payé"
+    }
+  },
+  "buttons": {
+    "save": "ENREGISTRER",
+    "cancel": "ANNULER"
+  }
+}

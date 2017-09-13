@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Add New post </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- Reactive form  -->
+<ion-content padding class="add-page">
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+        <ion-item>
+            <ion-label stacked>Did I </ion-label>
+            <ion-input type="text" formControlName="didi"></ion-input>
+        </ion-item>
+        <!-- <div>
+            <ion-label stacked class="post-label">Post type</ion-label>
+            <ion-tags-input name="tags" formArrayName="tags" (onChange)="onTagsChange($event)"></ion-tags-input>
+        </div> -->
+
+        <ion-item>
+            <ion-label stacked>Users to add</ion-label>
+            <ion-input formControlName="users" type="text"></ion-input>
+        </ion-item>
+        <div class="drop-down">
+            <div *ngIf="showUserLoad" class="user-loading">
+                <img class="user-loading-img" src="/assets/user_loading.gif">
+            </div>
+            <div *ngIf="noUsers" class="noUsers">
+                No Users found with this address
+            </div>
+            <ion-list>
+                <ion-item *ngFor="let user of userList; let i = index" (click)="selectedUser(user, i)">
+                    {{user.email}}
+                </ion-item>
+            </ion-list>
+
+        </div>
+
+        <div class="user-list">
+            <ion-list>
+                <ion-item *ngFor="let selectedUser of selectedUserList; let i = index">
+                    {{selectedUser.email}}
+                    <ion-icon name="remove-circle" item-end (click)="removeUser(i)"></ion-icon>
+                </ion-item>
+
+            </ion-list>
+        </div>
+
+
+        <ion-row class="confirmation-wrapper">
+            <ion-col col-6>
+                <button class="confirmation-button" ion-button color="danger">CANCEL</button>
+            </ion-col>
+            <ion-col col-6>
+                <button class="confirmation-button" type="submit" ion-button color="primary">SAVE</button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>
+
+<!-- Template driven form -->
+<!-- <ion-content padding class="add-page">
+    <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+        <ion-item>
+            <ion-label stacked>Did I </ion-label>
+            <ion-input #didi="ngModel" type="text" name="didi" [(ngModel)]="post.title" required></ion-input>
+        </ion-item>
+        <span *ngIf="didi.invalid && didi.dirty"> Title is required</span>
+        
+        <ion-item>
+            <ion-label stacked>Users to add</ion-label>
+            <ion-input name="users" [(ngModel)]="post.users" (keydown)="keyUp.next($event)" placeholder="search users..."></ion-input>
+        </ion-item>
+
+        <ion-row class="confirmation-wrapper">
+            <ion-col col-6>
+                <button class="confirmation-button" (click)="onCancel()" ion-button color="danger">CANCEL</button>
+            </ion-col>
+            <ion-col col-6>
+                <button class="confirmation-button" type="submit" ion-button color="primary">SAVE</button>
+            </ion-col>
+        </ion-row>
+    </form> -->
+<!-- </ion-content> -->

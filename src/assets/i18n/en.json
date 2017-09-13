@@ -1,0 +1,70 @@
+{
+  "titles": {
+    "bookings": "Bookings",
+    "add_booking": "Add booking",
+    "edit_booking": "Edit booking",
+    "infos": "Infos",
+    "messages": "Messages",
+    "payment": "Payments",
+    "calendar": "Calendar",
+    "agenda": "Agenda"
+  },
+  "sideMenu": {
+    "bookings": "Bookings",
+    "logout": "Logout",
+    "calendar": "Calendar",
+    "agenda": "Agenda List"
+  },
+  "menu": {
+    "call_guest": "Call Guest",
+    "send_sms": "Send SMS",
+    "send_mail": "Send email",
+    "send_invoice": "Send Invoice",
+    "send_contract": "Send Contract",
+    "add_payment": "Add Payment"
+  },
+  "filter": {
+
+  },
+  "labels_title": {
+    "guest": "GUEST DETAILS",
+    "booking": "BOOKING DETAIL",
+    "payment": "PAYMENT DETAIL"
+  },
+  "labels": {
+    "first_name": "FIRST NAME",
+    "last_name": "LAST NAME",
+    "name": "NAME",
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "country": "COUNTRY",
+    "guests": "GUESTS",
+    "nights": "NIGHTS",
+    "checkin": "CHECKIN",
+    "checkout": "CHECKOUT",
+    "platform": "PLATFORM",
+    "rental": "RENTAL NAME",
+    "timein": "ARRIVAL TIME",
+    "timeout": "DEPARTURE TIME",
+    "nb_adults": "No Of ADULTS",
+    "nb_children": "No Of CHILDREN",
+    "price": "TOTAL CHARGE",
+    "deposit": "DEPOSIT",
+    "base_charge": "BASE CHARGE",
+    "price_extra": "ADDITIONAL FEES",
+    "cleaning_fee": "CLEANING FEES",
+    "chat_hint": "Type your message",
+    "payment": {
+      "cleaning": "Cleaning",
+      "nights": "Nights",
+      "taxes": "City Taxes",
+      "balance": "Balance",
+      "invoice_total": "Invoice Total",
+      "paid": "Pay to date"
+    }
+  },
+  "buttons": {
+    "save": "SAVE",
+    "cancel": "CANCEL"
+  }
+}

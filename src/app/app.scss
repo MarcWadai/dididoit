@@ -1,0 +1,142 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// common css classes share between multiple pages.
+//
+//
+
+.sub-header-select-container{
+  background-color: $sub-header-segment-color;
+  height: $sub-header-segment-height;
+  color:white;
+}
+
+.sub-header-select{
+  padding : 0 !important;
+  max-width: 100%;
+  align-items: center;
+  text-align: right;
+}
+
+.mIcon {
+  text-align : center;
+  display: flex;
+  align-items: center;
+}
+
+.icon-10{
+  max-width: 10px !important;
+  max-height: 10px !important;
+  width: auto;
+  height: auto;
+}
+
+.icon-20{
+  max-width: 20px !important;
+  max-height: 20px !important;
+  width: auto;
+  height: auto;
+}
+
+.icon-30{
+  max-width: 30px !important;
+  max-height: 30px !important;
+  width: auto;
+  height: auto;
+}
+
+.icon-40{
+  max-width: 40px !important;
+  max-height: 40px !important;
+  width: auto;
+  height: auto;
+}
+
+.icon-50{
+  max-width: 50px !important;
+  max-height: 50px !important;
+  width: auto;
+  height: auto;
+}
+
+ion-slides {
+  height: 100%;
+}
+
+.datetime-ios {
+     padding: 0px;
+}
+.datetime-md {
+     padding: 0px;
+}
+.menu-button{
+  background-color: $superbooking-color;
+  color: white;
+  // font-size: 25px;
+}
+
+.has-error{
+  border-color: #FF0000;
+}
+
+// Side menu scss
+.side-menu{
+  margin-top: 20px;
+}
+.side-menu{
+  .menu-header{
+    margin : 15px;
+    font-size: 18px;
+  }
+
+  .menu-item{
+    margin-left: 16px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+  }
+  .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+  }
+
+  .sidemenu-button{
+    font-size: 25px;
+    height: 72px;
+  }
+
+  .sidemenu-button-logout{
+
+  }
+
+  //button on click
+  .sidemenu-button:active{
+      background-color: $superbooking-color;
+      color:white;
+  }
+  .active{
+    background-color: $superbooking-color;
+    color:white;
+  }
+
+  .label-ios, .label-md{
+    margin : 0;
+  }
+  hr{
+    margin-bottom: 1px;
+  }
+}

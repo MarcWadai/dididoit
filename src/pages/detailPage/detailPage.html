@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Add New post </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="detail-page">
+    <h1 class="title">{{selectedPost.title}}</h1>
+    <div class="circle-container">
+        <div class="circle-done" *ngIf="selectedPost.isDone" (click)="doneClick()" [@focusDone]='state'>
+            <div class="inside-circle">
+                <ion-icon name="checkmark"></ion-icon>
+            </div>
+        </div>
+        <div class="circle-not-done" *ngIf="!selectedPost.isDone" (click)="doneClick()" [@focusDone]='state'>
+            <div class="inside-circle-red">
+                Click me To be done !
+            </div>
+        </div>
+    </div>
+    <div class="note-container">
+        <ion-note>
+            {{selectedPost.date}}
+        </ion-note>
+    </div>
+    <div class="list-users">
+        <ion-list>
+            <ion-item *ngFor="let user of selectedPost.users">
+                <div item-start>
+                    <div class="user-circle">
+                        <span class="user-letter">{{user.email.substring(0,2)}}</span>
+                    </div>
+                </div>
+                <ion-label>{{user.email}}</ion-label>
+            </ion-item>
+        </ion-list>
+    </div>
+
+</ion-content>

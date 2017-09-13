@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-buttons end>
+            <button ion-button icon-only (click)="signOut()">
+              <ion-icon name="log-out"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-tabs #myTabs>
+    <ion-tab tabIcon="home" [root]="tabHome"></ion-tab>
+    <ion-tab tabIcon="list" [root]="tabListInvitation"></ion-tab>
+</ion-tabs>

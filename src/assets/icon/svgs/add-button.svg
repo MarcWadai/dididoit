@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe763a;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle cx="43" cy="43" r="43" class="cls-1"/>
+    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////8AAAAKhBN9AAAAEXRSTlMABLvyvw4N8CH2I/j5+sMkD4RbwuMAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAZklEQVQoz82S2w6AIAxDh+MiiEj//2dl0YUY4Z3z1pSl6wKRYjZma+iPQ8MNDM8A+9UMCkD4vHzZIxCTKqLW9+GQglmVJUyYG1aHs8hTVenhScKvHj5fd4kjTo0qBevAMO0GpX+fG9NsCV4Tpd3qAAAAAElFTkSuQmCC" x="32" y="32" width="24" height="24"/>
+  </g>
+</svg>

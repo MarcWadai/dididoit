@@ -1,0 +1,58 @@
+<ion-content padding>
+    <div class="login-container">
+        <div class="title-label">
+            <img src="assets/logo.png" />
+        </div>
+        <div class="sign-in-container">
+            <h1 class="sign-in-label">
+                Sign in
+            </h1>
+            <!-- <h4 class="sign-in-sub-label">
+        Lorem ipsume zekfnae knknsqf kqnd
+      </h4> -->
+        </div>
+        <form #loginForm="ngForm">
+            <div>
+                <div>
+                    <ion-item>
+                        <ion-label color="primary" floating>Email</ion-label>
+                        <ion-input #email="ngModel" name="email" type="email" [(ngModel)]="user.email" required></ion-input>
+                    </ion-item>
+                    <div *ngIf="!(email.valid || email.pristine) || (isSubmittedWrong && !email.valid)" class="error-label">
+                        <div [hidden]="!email.errors.required">
+                            Email is required
+                        </div>
+                        <div [hidden]="!email.errors.email">
+                            Email is not valid
+                        </div>
+                    </div>
+
+                    <ion-item>
+                        <ion-label color="primary" floating>Password</ion-label>
+                        <ion-input #password="ngModel" name="password" type="password" [(ngModel)]="user.password" required></ion-input>
+                    </ion-item>
+                    <div *ngIf="!(password.valid || password.pristine) || (isSubmittedWrong && !password.valid)" class="error-label">
+                        Password is required
+                    </div>
+                </div>
+                <!-- <div class="options-container">
+          <div class="remember-container">
+            <ion-checkbox></ion-checkbox>
+            <span>Remember me</span>
+          </div>
+        </div> -->
+                <div class="button-container">
+                    <button type="submit" (click)="onSubmit(loginForm)" class="login-button" ion-button>Login</button>
+                </div>
+                <div class="no-account-label">
+                    <div class="forget-container">
+                        or
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" (click)="createAccount()" class="login-button" ion-button>Create Account</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ion-content>

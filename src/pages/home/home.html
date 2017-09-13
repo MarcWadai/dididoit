@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-navbar color="primary">
+
+        <ion-title>Home </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+    <ion-card *ngFor="let post of posts | async" (click)="seeDetails(post)">
+        <ion-item class="card-title">
+            <h2>{{post.title | uppercase}}</h2>
+        </ion-item>
+
+        <ion-card-content>
+            <div class="circle-container">
+                <div class="circle-done" *ngIf="post.isDone">
+                    <div class="inside-circle">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </div>
+                </div>
+                <div class="circle-not-done" *ngIf="!post.isDone">
+                    <div class="inside-circle-red">
+                        Not Done Yet !
+                    </div>
+                </div>
+            </div>
+            <div class="note-container">
+                <ion-note>
+                    {{post.date}} by user1
+                </ion-note>
+            </div>
+        </ion-card-content>
+
+        <ion-row align-items-center>
+            <!-- <ion-col col-6>
+                <div class="tags-wrapper">
+                    <div class="tag">
+                        <span>iamatag</span>
+                    </div>
+                    <div class="tag">
+                        <span>iamatag</span>
+                    </div>
+                </div>
+            </ion-col> -->
+            <ion-col>
+                <div class="user-wrapper">
+                    <div class="user-circle" *ngFor="let user of post.users">
+                        <span class="user-letter">{{user.email.substring(0,2)}}</span>
+                    </div>
+                </div>
+            </ion-col>
+
+        </ion-row>
+
+    </ion-card>
+    <ion-fab right bottom>
+        <button ion-fab color="primary" (click)="addPost()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>
